@@ -1,0 +1,3 @@
+[submodule "japan-mobile-career-ip-address"]
+	path = japan-mobile-career-ip-address
+	url = git@github.com:chromsh/japan-mobile-career-ip-address.git
