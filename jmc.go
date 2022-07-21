@@ -43,6 +43,8 @@ func init() {
 	}
 }
 
+// DetectCareer returns career name of IP address.
+// Returns true if the IP address is within range of one of the carriers.
 func DetectCareer(ip string) (Career, bool) {
 	ipAddr := ipaddr.NewIPAddressString(ip).GetAddress()
 	if !ipAddr.IsIPv4() {
