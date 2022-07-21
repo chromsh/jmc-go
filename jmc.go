@@ -31,7 +31,7 @@ func init() {
 		if err != nil {
 			panic(err)
 		}
-		var jsonData Data
+		var jsonData data
 		err = json.Unmarshal(d, &jsonData)
 		if err != nil {
 			panic(err)
