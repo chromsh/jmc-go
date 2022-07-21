@@ -7,7 +7,7 @@ import (
 	"github.com/seancfoley/ipaddress-go/ipaddr"
 )
 
-//go:embed japan-mobile-career-ip-address/data/*
+//go:embed data/*
 var files embed.FS
 
 var trie ipaddr.IPv4AddressTrie
@@ -20,10 +20,10 @@ func init() {
 	}
 	careerMap = make(map[string]Career)
 	careers := []jsonMap{
-		{career: "docomo", path: "japan-mobile-career-ip-address/data/docomo.json"},
-		{career: "au", path: "japan-mobile-career-ip-address/data/au.json"},
-		{career: "softbank", path: "japan-mobile-career-ip-address/data/softbank.json"},
-		{career: "rakuten", path: "japan-mobile-career-ip-address/data/rakuten.json"},
+		{career: "docomo", path: "data/docomo.json"},
+		{career: "au", path: "data/au.json"},
+		{career: "softbank", path: "data/softbank.json"},
+		{career: "rakuten", path: "data/rakuten.json"},
 	}
 
 	for _, c := range careers {
