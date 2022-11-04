@@ -1,3 +1,3 @@
 embed:
-	git submodule update --init --recursive
+	git submodule update --init --recursive --remote
 	cp japan-mobile-career-ip-address/data/* data/
